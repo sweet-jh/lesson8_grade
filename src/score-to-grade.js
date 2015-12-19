@@ -20,9 +20,12 @@ function score(arr)
   {
     grade = 'D';
   }
-  else
+  else if(arr<0 || arr>100)
   {
     grade = '101';
+  }
+  else {
+    grade = '102';
   }
   return grade;
 }
